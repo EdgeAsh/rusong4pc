@@ -1,0 +1,106 @@
+a{color:inherit;}
+
+/*大标题*/
+.header-b{box-shadow:.05rem 0 .05rem #dedede;display: none}
+.header-b .logo{text-align:center; flex:0 0 3rem;height: .8rem;font-size:0;}
+.header-b .logo img{width:100%;height:100%;}
+.header-b .head-list{flex:1;}
+.header-b .head-list .list-item{float:left;font-size:.16rem;text-align:center;width:20%;line-height:.8rem}
+.header-b .head-list .list-item a:hover{border-bottom:.02rem solid #f00;}
+.header-b .head-contact{flex:0 0 3.6rem;width:4.2rem;display:flex;display:-webkit-flex;color:#f90;}
+.header-b .head-contact .cont-item{font-size: 0;flex:1;text-align:center;height:.8rem;}
+.header-b .head-contact .cont-item .iconfont{font-size:.2rem;line-height:.8rem;margin-right:.1rem;}
+.header-b .head-contact .cont-item .text{font-size:.1rem;vertical-align: top;line-height: .8rem}
+
+/*中标题*/
+.header-m{display:none;height:.5rem;position:relative;font-size:0;box-shadow:.05rem 0 .05rem #dedede;}
+.header-m .logo{display: inline-block;font-size:0px;width:1.2rem;height:.5rem;}
+.header-m .logo img{width:100%;height:100%;}
+.header-m .head-r{float:right;width:.5rem;height:.5rem;}
+.header-m .head-r .iconfont{font-size:.4rem;line-height:.5rem;color:#f00;}
+.header-m .head-list{display:absolute;width:100%;top:.5rem;left:0;display: none;}
+.header-m .head-list .list-item{width:100%;height:.5rem;line-height:.5rem;border-bottom:.01rem solid rgba(255,255,255,.3);background-color:#565656;color:#fff;font-size:.14rem;text-align:center}
+
+/*通用a*/
+.head-list .list-item{padding-bottom: 2px}
+.head-list .list-item a{display: inline-block;width:100%;height:100%;margin-bottom:-2px;}
+.head-list .list-item a:hover{color:#f00;}
+@media screen and (min-width:1000px){
+	.header-b{display:flex;display:-webkit-flex;}
+}
+@media screen and (max-width:999px){
+	.header-m{display: block}
+}
+
+
+
+/*页面底部*/
+.footer{}
+.footer .footer-top{font-size:0;padding:0 .5rem;background-color:#333;color:#fff;}
+.footer .footer-top .footerlist{display: flex;display:-webkit-flex;}
+.footer .footer-top .footerlist .flist-item{flex:1;padding:0 .2rem;font-size:.14rem;}
+.footer .footer-top .footerlist .flist-item .title{font-size:.16rem;margin-bottom:.2rem;}
+.footer .footer-top .footerlist .flist-item .text,.footer .footer-top .footerlist .flist-item .contact .tel{font-size:.14rem;line-height: .28rem}
+.footer .footer-top .footerlist .flist-item .contact,{font-size:.14rem;}
+.footer .footer-top .footerlist .flist-item .contact .social{margin:.2rem 0;display: relative}
+.footer .footer-top .footerlist .flist-item .contact .social .iconfont{font-size:.3rem;}
+.footer .footer-top .footerlist .flist-item .contact .social img{position:absolute;width:.5rem;height:.5rem;}
+.footer .footer-bot{padding:0 .1rem;background-color:#666;color:#fff;font-size:.12rem;line-height: .24rem;text-align:center;}
+
+@media screen and (max-width:850PX){
+	.footer .footer-top{display: none;}
+}
+
+
+/*右侧悬浮框*/
+.suspend{position:fixed;right:0; bottom:30px;font-size:0;}
+.suspend{}
+.suspend .up .up-item{position:relative;margin-bottom: .1rem;height:50px;}
+.suspend .up .up-item a .sidebox{position:absolute;right:0;height:50px;width:50px;background-color:#333;text-align:center;border-radius:.03rem 0 0 .03rem;font-size:0px;transition:all .3s linear;}
+.suspend .up .up-item a:hover .sidebox{width:150px;text-align:left}
+/*.suspend .up .up-item a .sidebox img{width:100px;height:100px;position:absolute;left:-200%;top:0;margin-top:-100%;}*/
+.suspend .up .up-item a .sidebox .iconfont{display:inline-block;color:#fff;font-size:.26rem;line-height:.32rem;height: .32rem;text-align: center;padding:.05rem;}
+.suspend .up .up-item a .sidebox .text{display:inline-block;line-height:50px;font-size:0rem;transition:all .3s linear;}
+.suspend .up .up-item a:hover .sidebox .text{font-size:.16rem;color:#fff;}
+.suspend .down{margin-top:.3rem;color:#fff;}
+.suspend .down .d-item{position:relative;margin-bottom:.1rem;height:.43rem;width:.43rem;background-color:#333;text-align:center;border-radius:.03rem 0 0 .03rem;}
+.suspend .down .d-item img{position:absolute;width:70px;height:0;right:50px;transition:all .3s linear;}
+.suspend .down .d-item .iconfont{display:inline-block;font-size:.26rem;line-height:.32rem;height: .32rem;text-align: center;padding:.05rem;}
+.suspend .down .d-item a:hover{color:#f60;}
+.suspend .down .d-item:hover img{height:70px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

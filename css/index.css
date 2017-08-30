@@ -1,0 +1,102 @@
+/*通用样式*/
+.red{font-size:inherit;color:#f00;font-weight:inherit;}
+
+/*头部*/
+.header{background-color:#000;height:.86rem;width:100%;}
+.head-l,.head-r{float:left;height:.86rem;font-size: 0px; padding:.1rem;line-height:.86rem;box-sizing:border-box;}
+.head-l img{width:.66rem;line-height:.86rem}
+.head-l .iconfont,.head-r .iconfont{line-height:normal;color:#838689;}
+.head-r .iconfont{font-size:.6rem;}
+.head-l .iconfont{font-size:.5rem;}
+.head-r{float:right;}
+
+/*顶部导航栏*/
+.nav{position:fixed;background-color: #fff;z-index:10;top:0;left:0;right:0;display: none}
+.nav-item{display:block;border-bottom:.02rem solid #dedede;background-color:#f20;height:.86rem;font-size:.28rem;line-height:.86rem;padding:0 .2rem;color:#fff;}
+.nav-item:last-child{border-bottom: none;}
+.nav-item .iconfont{float:right;font-size: .36rem}
+#btn-up>.iconfont{display: block; margin:0 auto;float:none;width:1rem;font-size:.6rem;text-align: center}
+
+/*轮播图*/
+.swiper-container{width:100%;height:6rem;z-index:0;}
+.swiper-container img{width:100%; height:100%;}
+
+/*footer*/
+.footer{text-align: center;margin:.5rem 0 1.2rem;border-top:.1rem solid #000;}
+.footer .ads{font-size:.28rem;line-height: .72rem}
+.footer .contact{font-size:.28rem;line-height: .48rem}
+.footer .social{font-size:0px;}
+.footer .social .social-item{display: inline-block;width: 33%;}
+.footer .social a{display: inline-block;width: 33.3%;padding:50% 50% 50% 0;position: relative;font-size: 0}
+.footer .social a img{width:90%;position: absolute;top:10%; left:5%;}
+.footer .copyright{font-size: .28rem;line-height:.72rem;color:#666;}
+
+/*底部弹出*/
+.bg-plus{position:fixed;z-index:10;left:0;top:0;bottom:0;right:0;background-color: rgba(255,255,255,.6);display:none;}
+.plusbox{position:fixed;z-index:20;bottom:1.5rem;left:0;font-size:0px;width:100%;display:none;}
+.plusbox .plusitem{display:inline-block;width:33.3%;font-size:0;text-align: center}
+.plusitem a{position:relative;display:inline-block;padding:50% 50% 0 0;}
+.plusitem a img{position:absolute;width:90%;top:5%;left:5%;}
+
+/*底部切换页面*/
+.bar{position:fixed;z-index:100;bottom: 0;left: 0;background-color: #000;width:100%;font-size:0px;text-align: center;box-shadow:0 -.02rem .10rem #888}
+.bar-item{float:left;width:20%;}
+.subitem{color:#838689;;width:100%;}
+.subitem .iconfont{font-size:.6rem}
+@media (min-device-width : 375px){.subitem {padding:.1rem 0;}}
+.subitem .txt{font-size:.2rem;display: block}
+#btn-cross{display:block;width:100%;position:relative;min-height:.86rem;color:#838689;}
+#btn-cross .icon-cross{font-size:1rem;position: absolute;top:-10%;left:50%;margin-left:-.5rem;border-radius:50%;background-color: #000;transition:transform .3s linear;}
+
+
+/*首页*/
+.jdrz1{text-align: center;border-bottom:1px solid #dedede;}
+.jdrz1 .big-title{font-size:1rem; line-height: 1.2rem; font-weight: 700}
+.jdrz1 .sml-title{font-size:.5rem; line-height: .6rem; font-weight: 400}
+
+.jdrz2{font-size:.28rem;text-align: center;line-height:.56rem;font-weight:bold;padding: .5rem 0;}
+
+.jdrz3{padding:.5rem 0;}
+.jdrz3 ul{font-size:0;display: -webkit-flex; /* Safari */display: flex;}
+.jdrz3 .item{flex:1;box-sizing:border-box;padding:0 .1rem;vertical-align: top}
+.jdrz3 .item img{width:100%;}
+.jdrz3 .item .title{font-size:.30rem; font-weight:bold;line-height:1.1;margin:.1rem 0;}
+.jdrz3 .item .content{font-size:.26rem;text-align: center}
+
+.jdrz4{padding:.2rem;}
+.jdrz4 ol{padding-left:.3rem;}
+.jdrz4 .title{font-size:.3rem;font-weight: 400; line-height: .5rem}
+.jdrz4 .item{list-style:decimal;font-size:.24rem; line-height: .36rem}
+
+.jdrz5{}
+.jdrz5 .img-wrap{display: -webkit-flex; /* Safari */display: flex;}
+.jdrz5 .img-wrap .img{text-align:center;flex:1;}
+.jdrz5 .img-wrap .img img{width:80%;}
+.ad5{padding:.1rem;}
+.ad5 .item{border:1px solid #666; border-radius:.1rem;padding:.1rem;margin-bottom:.1rem}
+.ad5 .item .title{font-size:.28rem;}
+.ad5 .item .content{font-size:.28rem;}
+
+.jdrz6{padding:0 .1rem;}
+.jdrz6 .advan-title{font-size:.36rem;line-height: 1.5}
+.jdrz6 .advan{font-size:.24rem;padding-left:.1rem;line-height:1.5}
+.jdrz6 .advan .aitem{display: -webkit-flex; /* Safari */display: flex;}
+.jdrz6 .advan .aitem .iconfont{color:#f00;flex:0 0 .24rem;vertical-align: center;line-height:1.2;margin-right: .1rem;margin-top:-1px;}
+.jdrz6 .advan .aitem span{flex:1;line-height: 1.2}
+
+
+/*案例页*/
+.case{background-color:#666;padding:.2rem;}
+.case .item{margin-bottom:.2rem;}
+.case .item img{width:100%;border-radius: .1rem;}
+
+/*关于*/
+.about{padding:.1rem;}
+.about .title{font-size:.32rem;margin-bottom:.1rem;}
+.about .text{font-size:.28rem; line-height:1.2;padding-left:.1rem;}
+.about .text img{float:left;width:20%;}
+.about .text .cor-culture{text-align: center}
+
+
+
+
