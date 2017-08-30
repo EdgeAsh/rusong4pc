@@ -5,6 +5,8 @@ $(document).ready(function(){
 				loop:true,
 				autoplay:true,
 				speed: 2000,
+				nextButton: '.swiper-button-next',
+    		prevButton: '.swiper-button-prev',
 				autoplayDisableOnInteraction:false
 			});
 			// 时间设置
@@ -19,4 +21,12 @@ $(document).ready(function(){
 				var btc = $('#btn-cross>.iconfont')
 				btc.hasClass("rotate")? btc.css("transform","rotate(0deg)").removeClass('rotate'): btc.css("transform","rotate(-180deg)").addClass('rotate');
 			});
+
+			// 首页tab-show
+			$('#tab-show').on('click','.tab-index-item',function(event){
+				var index = $(this).index();
+				var that = this;
+				$(that).addClass('active').siblings().removeClass('active');
+				$('#tab-con>div').eq(index).addClass('show').siblings().removeClass('show');
+			})
 });
